@@ -1,0 +1,7 @@
+platform :ios, ‘7.0’
+
+target 'block小节' do
+  
+pod 'ReactiveCocoa', '~> 2.5'
+
+end

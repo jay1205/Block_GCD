@@ -1,0 +1,6 @@
+GCD是异步执行任务的技术之一。一般将应用程序中记述的线程管理用的代码在系统级中实现。开发者只需要定义想执行的任务并追加到适当的Dispatch Queue中，GCD就能生成必要的线程并计划执行任务。由于线程管理作为西用的一部分来实现的，因此可统一管理，也可执行任务。
+dispatch_async(queue, ^{}），              仅此一行就表示让处理在后台线程中执行
+dispatch_async(dispatch_get_main_queue(), ^{}），仅此一行就表示让处理在主线程中执行
+
+Dispatch Queue：Serial Dispatch Queue等待现在执行中处理结束
+Concurrent Dispatch Queue不等待现在执行中处理结束
